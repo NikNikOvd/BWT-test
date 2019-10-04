@@ -1,0 +1,298 @@
+
+@import url('https://fonts.googleapis.com/css?family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+* {
+   margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 1000px;
+  position:relative;
+}
+
+ul li {
+list-style: none;
+}
+
+a:hover {
+outline: none;
+text-decoration:none;
+}
+
+a:focus {
+  outline:none;
+  outline-offset: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ultra', serif;
+color: #800000;
+}
+
+/*---------------------------------------------*/
+.head-top {
+  width: 100%;
+  height: 100px;
+background-color: #111D2E; 
+position: relative;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+.head-down {
+   width: 100%;
+  height: 100px;
+background-color: #111D2E; 
+}
+
+/*---------------------------------------------*/
+
+
+/*---------------------------------------------*/
+button {
+background: #111D2E;
+}
+
+button:hover {
+background-color: #800000;
+}
+/*---------------------------------------------*/
+
+/*---------------------------------------------*/
+section {
+position:relative; 
+width: 100%;
+height: 100%
+min-height: 760px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+background-color: #008080;
+}
+
+.box-login { 
+width: 300px;
+height: 400px;
+border: 4px solid #111D2E;
+border-radius: 20px; 
+}
+
+.box-text {
+width: 300px;
+height: 100px; 
+display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.log-text {
+font-family: 'Ultra', serif;
+color: #800000;
+font-size: 20px;
+text-align: center;
+}
+
+.login-form {
+width: 300px;
+height: 300px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+}
+
+.box-input {
+padding: 15px;
+}
+
+.reg-text  a {
+text-align: center;
+color: #800000;
+font-family: 'Ultra', serif;
+text-decoration: underline;
+}
+
+.box-botton {
+padding: 15px;
+}
+
+.input-log {
+height: 35px;
+width: 250px;
+text-align: center;
+border: 2px solid #111D2E;
+border-radius: 20px; 
+}
+
+.button-log {
+height: 35px;
+width: 150px;
+text-align: center;
+border: 2px solid #111D2E;
+border-radius: 20px;
+color: silver;
+}
+.box-block{
+position: relative;
+width: 100%;
+height: 100%;
+min-height: 800px; 
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+background-color: #008080;
+}
+/*---------------------------------------------*/
+.position-info {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+.sms-box {
+background-color: silver;
+
+
+border: 3px solid green;
+border-radius: 10px; 
+word-wrap: break-word;
+}
+.photo {
+  width: 60px;
+  height: 80px;
+}
+.brith {
+padding: 15px;
+font-family: 'Ultra', serif;
+color: #800000;
+}
+.function {
+ padding: 15px;
+font-family: 'Ultra', serif;
+color: #800000;
+font-size: 20px;
+}
+.info {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+/*---------------------------------------------*/
+
+.button {
+margin: 5px;
+height: 35px;
+width: 10%;
+text-align: center;
+border: 2px solid red;
+border-radius: 20px;
+background-color: black;
+color: silver;
+}
+.menu-botton {
+height: 100px;
+width: 100%;
+padding: 5px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+}
+/*---------------------------------------------*/
+
+/*---------------------------------------------*/
+.box-name {
+font-family: 'Rubik Mono One', sans-serif;
+color: black;
+font-size: 16px;
+margin: 10px 10px 0px 30px ;
+}
+.box-data {
+font-family: 'Rubik Mono One', sans-serif;
+color: blue;
+font-size: 10px;
+}
+.box-sms{
+position: relative;
+font-family: 'Pacifico', cursive;
+font-size: 24px;
+margin: 20px 0px 20px 0px ;
+white-space: pre-wrap;
+width: 100%;
+
+}
+/*---------------------------------------------*/
+.pogoda {
+position: relative;
+display: flex;
+align-items: center;
+flex-direction: column;
+
+}
+.provisions {
+position: relative;
+display: block;
+font-size: 30px;
+color: orange;
+text-align: center;
+}
+.temperature-icon {
+position: relative;
+font-size: 100px;
+color: orange;
+text-align: center;
+}
+.temperature {
+  text-align: center;
+}
+.icon {
+  display: block;
+  text-align: right;
+}
+.weather-box-properties{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.weather-box-properties p {
+  color: blue;
+  font-size: 65%;
+}
+.wind {
+width: 25%;
+display: block;
+font-size: 20px;
+color: orange;
+text-align: center;
+}
+.pressure {
+width: 25%;
+font-size: 22px;
+color: orange;
+text-align: center;
+}
+.humidity{
+width: 25%;
+font-size: 25px;
+color: orange;
+text-align: center;
+}
+.temperature_water{
+width: 25%;
+font-size: 25px;
+color: orange;
+text-align: center;
+}
