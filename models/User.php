@@ -6,8 +6,6 @@ use core\Model as M;
 use DB as DB;
 use phpQuery;
 
-include_once ROOT.'/core/Model.php';
-include_once ROOT.'/components/Db.php';
 include_once 'phpQuery.php';
 
 class User extends M\Model

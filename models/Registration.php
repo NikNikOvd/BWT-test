@@ -5,9 +5,9 @@ namespace models\Registr;
 use DB;
 use core\Model as M;
 
-include_once ROOT.'/core/Controller.php';
-include_once ROOT.'/components/Db.php';
-include_once ROOT.'/core/Model.php';
+//include_once ROOT.'/core/Controller.php';
+//include_once ROOT.'/components/Db.php';
+//include_once ROOT.'/core/Model.php';
 
 class Registration extends M\model
 {

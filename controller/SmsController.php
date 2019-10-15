@@ -10,11 +10,6 @@ use core\model as M;
 use phpQuery;
 use ReCaptcha;
 
-include_once ROOT.'/core/Controller.php';
-include_once ROOT.'/core/View.php';
-include_once ROOT.'/models/User.php';
-include_once ROOT.'/models/Sms.php';
-
 class SmsController extends C\Controller
 {
 	function __construct()

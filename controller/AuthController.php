@@ -7,10 +7,6 @@ use core\Controller as C;
 use core\View as V;
 use core\model as M;
 
-include_once ROOT.'/core/Controller.php';
-include_once ROOT.'/core/View.php';
-include_once ROOT.'/models/user.php';
-
 class AuthController extends C\Controller
 {
 

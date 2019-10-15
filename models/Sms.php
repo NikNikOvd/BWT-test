@@ -4,9 +4,6 @@ namespace models\Sms;
 use DB;
 use core\Model as M;
 
-include_once ROOT.'/components/Db.php';
-include_once ROOT.'/core/Model.php';
-
 class Sms extends M\Model
 {
     private $id_user;

@@ -7,11 +7,6 @@ use core\View as V;
 use models\Registr as R;
 use models\User as U;
 
-include_once ROOT.'/core/Controller.php';
-include_once ROOT.'/core/View.php';
-include_once ROOT.'/models/Registration.php';
-include_once ROOT.'/models/user.php';
-
 class RegistrController extends C\Controller
 {
     function __construct()
