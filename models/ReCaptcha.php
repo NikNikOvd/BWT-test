@@ -1,4 +1,3 @@
-
 <?php
 
 
@@ -11,15 +10,10 @@ class ReCaptchaResponse
 class ReCaptcha
 {
     private static $_signupUrl = "https://www.google.com/recaptcha/admin";
-    private static $_siteVerifyUrl =
-        "https://www.google.com/recaptcha/api/siteverify?";
+    private static $_siteVerifyUrl = "https://www.google.com/recaptcha/api/siteverify?";
     private $_secret;
     private static $_version = "php_1.0";
-    /**
-     * Constructor.
-     *
-     * @param string $secret shared secret between site and ReCAPTCHA server.
-     */
+    
     function ReCaptcha($secret)
     {
         if ($secret == null || $secret == "") {
@@ -92,7 +86,6 @@ class ReCaptcha
             $recaptchaResponse->success = true;
         } else {
             $recaptchaResponse->success = false;
-            //$recaptchaResponse->errorCodes = $answers [error-codes];
         }
         return $recaptchaResponse;
     }

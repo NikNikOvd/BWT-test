@@ -1,23 +1,31 @@
 <?php
 
+namespace SiteController;
 
+use core\Controller as C;
+use core\View as V;
 
-class SiteController
-{
+include_once ROOT.'/core/Controller.php';
+include_once ROOT.'/core/View.php';
+
+class SiteController extends C\Controller
+{    
+    function __construct()
+    {
+        $this->view = new V\view();
+    }
     //перенаправление после авторизации
     public function actionIndex()
     {
-        require_once(ROOT . '/views/site/index.php');
+        $this->view->generete('index.php');
         return true;
     }
     //перенаправление после регистрации
     public function actionRegistr()
     {
-        require_once(ROOT . '/views/site/registr.php');
+        $this->view->generete('registr.php');
         return true;
     }
-
-
 }
 
 ?>

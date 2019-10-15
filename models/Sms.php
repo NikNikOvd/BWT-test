@@ -1,30 +1,28 @@
 <?php 
-class Sms
+namespace models\Sms;
+
+use DB;
+use core\Model as M;
+
+include_once ROOT.'/components/Db.php';
+include_once ROOT.'/core/Model.php';
+
+class Sms extends M\Model
 {
     private $id_user;
     private $text_sms;
-   
-   
- 
-     //конструктор для данных
-     function __construct ($id_user,$text_sms)
-     {
+    //конструктор для данных
+    function __construct ($id_user, $text_sms)
+    {
         $this->id_user = htmlspecialchars($id_user);
         $this->text_sms = htmlspecialchars($text_sms);
-     }
-
+    }
     public function addSms()
     {
-        $db = Db::getConnection();
-         
-         $add = $db->prepare("INSERT INTO sms (text_sms,id_user) VALUES(?,?)");
-         $add->execute(array($this->text_sms,$this->id_user));
-
-       
-            //return true;
-         
-         
+        $db = DB\Db::getConnection();
+        $add = $db->prepare("INSERT INTO sms (text_sms, id_user) VALUES(?, ?)");
+        $add->execute(array($this->text_sms, $this->id_user));
     }
-
 }
-     ?>
+     
+?>

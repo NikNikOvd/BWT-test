@@ -1,15 +1,18 @@
 <?php 
+
 function __autoload ($class_name)
 {
-	$array_paths = array(
-		'/models/',
-		'/components/'
-	);
+    $array_paths = array (
+        '/components/',
+        '/models/',
+        '/core/'
+    );
 	foreach ($array_paths as $path) {
-		$path = ROOT . $path . $class_name . '.php';
+		$path = ROOT. $path .$class_name .'.php';
 		if (is_file($path)) {
-			include_once $path;
+		    include_once $path;
 		}
 	}
 }
+	
 ?>
